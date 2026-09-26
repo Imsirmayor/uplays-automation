@@ -1,14 +1,27 @@
-# UPLAYS Automation Scripts
+# Automation Scripts
 
 Google Apps Script automation for the UPLAYS program: registration handling,
 email confirmations, duplicate detection, and batch sending.
 
 ## Structure
 
-- `config/` — configuration (copy `config.example.js` → `config.js`)
-- `scripts/registration/` — form-submit handlers (EN, UA, German class)
-- `scripts/data-processing/` — dedupe export, duplicate code checker
-- `scripts/email-sender/` — scheduled batch email sender
+```
+uplays-automation/
+├── config/                     # configuration (gitignored config.js)
+│   └── config.example.js
+├── scripts/
+│   ├── registration/           # form-submit handlers
+│   │   ├── formSubmitEN.js
+│   │   ├── formSubmitUA.js
+│   │   └── germanClassRegistrationUA.js
+│   ├── data-processing/        # dedupe / duplicate detection
+│   │   ├── dedupeExport.js
+│   │   └── duplicateCodeChecker.js
+│   └── email-sender/           # scheduled bulk sender
+│       └── batchEmailSender.js
+└── docs/
+    └── SETUP.md
+```
 
 ## Setup
 

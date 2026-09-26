@@ -1,15 +1,17 @@
 # Real config with credentials — never commit
 config/config.js
 
-# Apps Script local artifacts
+# Apps Script / clasp local artifacts
 .clasp.json
 appsscript.json.local
 
 # OS / editor
 .DS_Store
+Thumbs.db
 .vscode/
 .idea/
 *.log
 
 # Node (if you use clasp locally)
 node_modules/
+package-lock.json
